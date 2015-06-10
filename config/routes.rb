@@ -1,8 +1,40 @@
 Rails.application.routes.draw do
+  # get 'static_pages/home'
+
+  # get 'static_pages/about'
+
+  # get 'static_pages/show'
+
+  # get 'posts/index'
+
+  # get 'posts/new'
+
+  # get 'posts/create'
+
+  # get 'posts/edit'
+
+  # get 'posts/update'
+
+  # get 'posts/destroy'
+
   devise_for :users
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-  root 'welcome#index'
+  devise_for :models
+  root 'static_pages#home'
+
+  resources :users 
+  resources :posts
+  
+
+  get 'static_pages/show/:id', to: 'static_pages#show', as: :show
+
+  get '/archive/:id', to: 'posts#archived', as: :archive
+
+  get 'static_pages/about
+
+  # devise_for :users
+  # # The priority is based upon order of creation: first created -> highest priority.
+  # # See how all your routes lay out with "rake routes".
+  # root 'welcome#index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

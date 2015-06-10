@@ -6,6 +6,15 @@ gem 'devise'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
+
+gem 'will_paginate', '~> 3.0.6'
+# Paperclip!
+gem "paperclip", "~> 4.2"
+# Bootstrap gems
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap_form'
+# Font awesome gem
+gem "font-awesome-rails"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,7 +32,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 
-gem 'pg'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
