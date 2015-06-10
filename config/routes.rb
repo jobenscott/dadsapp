@@ -18,7 +18,6 @@ Rails.application.routes.draw do
   # get 'posts/destroy'
 
   devise_for :users
-  devise_for :models
   root 'static_pages#home'
 
   resources :users 
