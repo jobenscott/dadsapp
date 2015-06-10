@@ -13,8 +13,8 @@ class StaticPagesController < ApplicationController
     # adminMaker = User.find_by(email: "jobenscott@yahoo.com")
     # adminMaker.add_role :admin
 
-    # @aaron = User.find_by(email: "jobenscott@yahoo.com")
-    # @ray = User.find_by(email: "rayeveleth@yahoo.com")
+    @aaron = User.find_by(email: "jobenscott@yahoo.com")
+    @ray = User.find_by(email: "rayeveleth@gmail.com")
 
 
   end
@@ -22,6 +22,9 @@ class StaticPagesController < ApplicationController
   
 
   def about
+
+    @aaron = User.find_by(email: "jobenscott@yahoo.com")
+    @ray = User.find_by(email: "rayeveleth@gmail.com")
   end
 
   def show

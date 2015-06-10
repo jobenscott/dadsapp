@@ -10,3 +10,10 @@
   Well howdy everyone! This is my blog, about Iron Men, and other questionable fantasies. I enjoy getting no sleep and waking up at incredibly unreasonable hours. If you can't tell I don't have much to write so I'm making it up as I go. If I was a boy, something cause I'm Riahnna, and I really do not know how to spell that name! Woooh! 
 </p>
 </div>
+
+<% if current_user == @aaron || current_user == @ray %>
+<%= current_user.email %>
+<% end %>
+<%= link_to "Sign Up", new_user_path %>
+<%= link_to "Sign In", new_user_session_path %>
+<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
