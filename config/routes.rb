@@ -29,7 +29,7 @@ Rails.application.routes.draw do
 
   get '/archive/:id', to: 'posts#archived', as: :archive
 
-  get 'static_pages/about
+  get 'static_pages/about'
 
   # devise_for :users
   # # The priority is based upon order of creation: first created -> highest priority.
