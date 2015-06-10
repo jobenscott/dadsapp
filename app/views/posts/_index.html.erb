@@ -20,7 +20,7 @@
       <!-- <button class="optionButtons">Show Summary</button> -->
       <div class="optionButtons summaryShow">Subject</div>
       <%#= if can? :update, post %>
-      <% if (current_user == @ray) || (current_user == @aaron) %>
+      <% if current_user == @ray || current_user == @aaron %>
       <div class="optionsButton optionButtons">Options</div>
       <div class="backFromOptions optionButtons">>></div>
 
